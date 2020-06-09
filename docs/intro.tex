@@ -40,19 +40,19 @@
  
 \section*{1. Introducción y objetivos}
 
-Bajo la perspectiva y enfoque de la teoría de los Sistemas Complejos, el modelo del consumidor Postkeynessiano  presenta características interesantes debido a que este enfoque de la teoría económica, intenta comprender las propiedades de un sistema económico de consumo, producidas a partir de las características individuales de muchos agentes y de sus interacciones a través del espacio y el tiempo.
+Bajo la perspectiva de la teoría de Sistemas Complejos, el modelo del consumidor Postkeynessiano es un enfoque dentro de la teoría económica que intenta comprender las propiedades de un sistema de consumo. Dichas propiedades surgen a partir de las interacciones temporales y espaciales entre los diferentes indivduos que participan en el modelo, los cuales poseen características individuales diversas.
 
-Como se presenta a detalle en [Vite R., Carreón G.], los elementos de la teoría de consumo Postkeynessiana, hacen una invitación al Modelado Basado en Agentes debido a que la toma de decisiones de consumo de cada agente económico, se ve afectada por la influencia de su entorno.
+Como se presenta a detalle en [Vite R., Carreón G.], los elementos de la teoría de consumo Postkeynessiana, hacen una invitación al Modelado Basado en Agentes (MBA) debido a que la toma de decisiones de consumo de cada agente económico se ve afectada por la influencia de su entorno.
 
-El modelo basado en agentes  presentado en la referencia mencionada, tiene como hipótesis de referencia que ``\textit{el consumo depende del ingreso corriente, de las costumbres, de los hábitos, de la moda y de la imitación}''
+El MBA presentado en la referencia anterior tiene como hipótesis que ``\textit{el consumo depende del ingreso corriente, de las costumbres, de los hábitos, de la moda y de la imitación}''
 
-Este modelo describe la dinámica creada de principalmente dos elementos: el \textbf{consumo por moda} como la influencia sobre el consumo debido a la presencia  de determinados vecinos, y el consumo por imitación al tipo de consumo que se hace debido a cambios en el ingreso (el cual determina la clase social a la que pertenece).
+Este modelo describe la dinámica creada a partir de dos elementos: el \textbf{consumo por moda} como la influencia sobre el consumo debido a la presencia  de determinados vecinos, y el \textbf{consumo por imitación} al tipo de consumo que se hace debido a cambios en el ingreso (el cual determina la clase social a la que pertenece).
 
-Para modelar las prácticas de consumo por moda, se define un vector de consumo $V_c=V_c(x,y,z)$ que determina el nivel de consumo y clasifica al agente en distintas clases de acuerdo a los valores de las variables binarias $x,y,z$. Este vector de consumo se evoluciona a partir de reglas de actualización a partir de la información local (que es determinada en este caso, por la vecindad de Moore del agente)
+Para modelar las prácticas de consumo por moda, se define un vector de consumo $V_c=V_c(x,y,z)$ que determina el nivel de consumo y clasifica al agente en distintas clases de acuerdo a los valores de las variables binarias $x,y,z$. Este vector de consumo se evoluciona a partir de reglas de actualización a partir de la información local determinada por la vecindad de Moore del agente.
 
-Las prácticas de consumo por imitación se modelan a partir de la adaptación del consumo, cuando el agente cambia de ingreso y transita entre clases sociales.  La transición entre clases sociales se hace a partir de un sencillo modelo probabilístico que asigna la probabilidad e transitar de una clase a otra.
+Las prácticas de consumo por imitación se modelan a partir de la disponibilidad  de ingreso del agente. Éste se determina a partir de la clase social a la que pertenece. Durante la dinámica, el agente puede transitar de una clase a otra de forma estocástica.
 
-Es en esta parte del modelo, en donde nos planteamos los \textbf{objetivos} para este pequeño trabajo de investigación. Nuestra propuesta es modificar el modelado del consumo por imitación y hacer un modelo no probabilístico para la transición entre clases sociales. La hipótesis a incluir está basada en la idea de que ``el consumo de un agente, es el ingreso de otro agente''. así,  intentaremos modelar el ingreso del agente a  partir de la información local que a su vez, influirá en las practicas de consumo por moda, sustituyendo las probabilidades de transición entre clases, por umbrales que definan la clase a la que pertenece el agente. 
+Es en esta parte del modelo en donde nos planteamos los \textbf{objetivos} para este pequeño trabajo de investigación. Nuestra aportación es cambiar la forma en la que los agentes transitan entre clases sociales. En vez de que sea probabilística, proponemos que dependa de los ingresos "reales" dentro de la dinámica. La hipótesis está basada en la idea de que ``el consumo de un agente, es el ingreso de otro''. así,  intentaremos modelar el ingreso del agente a  partir de la información local que a su vez, influirá en las practicas de consumo por moda, sustituyendo las probabilidades de transición entre clases, por umbrales que definan la clase a la que pertenece el agente. 
 
 
 
